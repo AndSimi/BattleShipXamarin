@@ -18,25 +18,16 @@
             
             
             <StackLayout x:Name="layoutChoose" Orientation="Horizontal" Spacing="5" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
-                <Button x:Name="btnNew"  
-           Text="Register"  
-           FontSize="20"  
-           HorizontalOptions="Center"  
-           VerticalOptions="CenterAndExpand"  ></Button>
-          
-                <Button x:Name="btnReturn"  
-           Text="Log-on"  
-           FontSize="20"  
-           HorizontalOptions="Center"  
-           VerticalOptions="CenterAndExpand"  ></Button>
+                <Button x:Name="btnNew" Text="Register"  FontSize="20"  HorizontalOptions="Center"   VerticalOptions="CenterAndExpand" 
+           Clicked="OnbtnNewClicked"></Button>
+
+                <Button x:Name="btnReturn" Text="Log-on"  FontSize="20"  HorizontalOptions="Center"  VerticalOptions="CenterAndExpand"  Clicked="OnbtnReturnClicked"></Button>
           
             </StackLayout>
 
             <StackLayout x:Name="layoutRegister" VerticalOptions="CenterAndExpand" IsVisible="False">
-                <Label Text="First Name" />
+                <Label Text="Name" />
                 <Entry  x:Name="entryFirstName" />
-                <Label Text="Last Name" />
-                <Entry  x:Name="entryLastName" />
                 <Label Text="Email" />
                 <Entry  x:Name="entryEmail" />
 
@@ -44,11 +35,15 @@
                     <Button x:Name="btnRegister"  
                Text="Let's Do This!"  
                HorizontalOptions="Center"  
-               VerticalOptions="CenterAndExpand"/>
+               VerticalOptions="CenterAndExpand"
+               Clicked="OnbtnRegisterClicked"/>
+                    
                     <Button x:Name="btnCancelRegister"  
                Text="Cancel"  
                HorizontalOptions="Center"  
-               VerticalOptions="CenterAndExpand"/>
+               VerticalOptions="CenterAndExpand"
+               Clicked="OnbtnCancelRegisterClicked"/>
+                    
                 </StackLayout>
             </StackLayout>
 
@@ -60,11 +55,13 @@
                     <Button x:Name="btnLogin"  
                Text="Let me in!"  
                HorizontalOptions="Center"  
-               VerticalOptions="CenterAndExpand"/>
+               VerticalOptions="CenterAndExpand"
+               Clicked="OnbtnLoginClicked"/>
                     <Button x:Name="btnCancelLogin"  
                Text="Cancel"  
                HorizontalOptions="Center"  
-               VerticalOptions="CenterAndExpand"/>
+               VerticalOptions="CenterAndExpand"
+               Clicked="OnbtnCancelLoginClicked"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
