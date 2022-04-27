@@ -77,7 +77,7 @@ namespace BattleShipXamarin.View
         {
             if (string.IsNullOrEmpty(entryFirstName.Text) || string.IsNullOrEmpty(entryEmail.Text) || string.IsNullOrEmpty(entryPassword.Text))
                 App.Current.MainPage.DisplayAlert("Error", "Please supply the required fields.", "Got it");
-            
+            else { Navigation.PushModalAsync(new SetUp()); }
                 
         }
 
@@ -87,6 +87,8 @@ namespace BattleShipXamarin.View
                 App.Current.MainPage.DisplayAlert("Error", "Please supply your email.", "Got it");
             else
             {
+                Navigation.PushModalAsync(new SetUp());
+               
                 btnLogin.IsEnabled = false;
               
             }
