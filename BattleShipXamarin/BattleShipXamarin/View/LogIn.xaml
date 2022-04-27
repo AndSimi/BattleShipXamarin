@@ -6,20 +6,20 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand">
             <Label Text="BattleShips!"  
-          FontSize="30"  
-          HorizontalOptions="Center"  
-          VerticalOptions="CenterAndExpand" />
+              FontSize="30"  
+              HorizontalOptions="Center"  
+              VerticalOptions="CenterAndExpand" />
 
             <Label x:Name="lblWelcome" Text="Register to start the game, or Log-on to continue!"  
-          FontSize="30"  
-          HorizontalOptions="Center"  
-          VerticalOptions="CenterAndExpand"
-          Padding="25"/>
+              FontSize="30"  
+              HorizontalOptions="Center"  
+              VerticalOptions="CenterAndExpand"
+              Padding="25"/>
             
             
             <StackLayout x:Name="layoutChoose" Orientation="Horizontal" Spacing="5" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
                 <Button x:Name="btnNew" Text="Register"  FontSize="20"  HorizontalOptions="Center"   VerticalOptions="CenterAndExpand" 
-           Clicked="OnbtnNewClicked"></Button>
+                  Clicked="OnbtnNewClicked"></Button>
 
                 <Button x:Name="btnReturn" Text="Log-on"  FontSize="20"  HorizontalOptions="Center"  VerticalOptions="CenterAndExpand"  Clicked="OnbtnReturnClicked"></Button>
           
@@ -30,19 +30,21 @@
                 <Entry  x:Name="entryFirstName" />
                 <Label Text="Email" />
                 <Entry  x:Name="entryEmail" />
+                <Label Text="Password" />
+                <Entry  x:Name="entryPassword" IsPassword="True"/>
 
                 <StackLayout  Orientation="Horizontal" Spacing="3" HorizontalOptions="Center">
                     <Button x:Name="btnRegister"  
-               Text="Let's Do This!"  
-               HorizontalOptions="Center"  
-               VerticalOptions="CenterAndExpand"
-               Clicked="OnbtnRegisterClicked"/>
+                      Text="Let's Do This!"  
+                      HorizontalOptions="Center"  
+                      VerticalOptions="CenterAndExpand"
+                      Clicked="OnbtnRegisterClicked"/>
                     
                     <Button x:Name="btnCancelRegister"  
-               Text="Cancel"  
-               HorizontalOptions="Center"  
-               VerticalOptions="CenterAndExpand"
-               Clicked="OnbtnCancelRegisterClicked"/>
+                      Text="Cancel"  
+                      HorizontalOptions="Center"  
+                      VerticalOptions="CenterAndExpand"
+                      Clicked="OnbtnCancelRegisterClicked"/>
                     
                 </StackLayout>
             </StackLayout>
@@ -50,18 +52,20 @@
             <StackLayout x:Name="layoutLogin" VerticalOptions="CenterAndExpand" IsVisible="False">
                 <Label Text="Email" />
                 <Entry  x:Name="entryExistingEmail" />
+                <Label Text="Password" />
+                <Entry  x:Name="entryExistingPassword" IsPassword="True"/>
 
                 <StackLayout  Orientation="Horizontal" Spacing="3" HorizontalOptions="Center">
                     <Button x:Name="btnLogin"  
-               Text="Let me in!"  
-               HorizontalOptions="Center"  
-               VerticalOptions="CenterAndExpand"
-               Clicked="OnbtnLoginClicked"/>
+                      Text="Let me in!"  
+                      HorizontalOptions="Center"  
+                      VerticalOptions="CenterAndExpand"
+                      Clicked="OnbtnLoginClicked"/>
                     <Button x:Name="btnCancelLogin"  
-               Text="Cancel"  
-               HorizontalOptions="Center"  
-               VerticalOptions="CenterAndExpand"
-               Clicked="OnbtnCancelLoginClicked"/>
+                      Text="Cancel"  
+                      HorizontalOptions="Center"  
+                      VerticalOptions="CenterAndExpand"
+                      Clicked="OnbtnCancelLoginClicked"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

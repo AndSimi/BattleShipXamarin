@@ -75,7 +75,7 @@ namespace BattleShipXamarin.View
 
         void OnbtnRegisterClicked(object sender, EventArgs args)
         {
-            if (string.IsNullOrEmpty(entryFirstName.Text) || string.IsNullOrEmpty(entryLastName.Text) || string.IsNullOrEmpty(entryEmail.Text))
+            if (string.IsNullOrEmpty(entryFirstName.Text) || string.IsNullOrEmpty(entryEmail.Text) || string.IsNullOrEmpty(entryPassword.Text))
                 App.Current.MainPage.DisplayAlert("Error", "Please supply the required fields.", "Got it");
             
                 
