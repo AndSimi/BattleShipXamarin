@@ -11,5 +11,21 @@ namespace BattleShipXamarin.Model
         public User Enemy { get; set; }    
 
 
+
+        public Room(string name, User GameOwner)
+        {
+                
+            this.Name = name;
+            this.GameOwner = GameOwner;
+
+
+        }
+
+
+
+
+
+
+
     }
 }

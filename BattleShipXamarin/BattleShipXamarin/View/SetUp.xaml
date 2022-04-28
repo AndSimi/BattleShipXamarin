@@ -34,6 +34,10 @@
                     Grid.Column="3" />
             </Grid>
 
+
+            <Button x:Name="btnCreateRoom" Text="Create a new room" HorizontalOptions="Center"  
+                      VerticalOptions="CenterAndExpand" Clicked="OnbtnCreateRoomClicked"> </Button>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

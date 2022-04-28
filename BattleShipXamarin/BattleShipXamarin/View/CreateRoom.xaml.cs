@@ -10,25 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace BattleShipXamarin.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SetUp : ContentPage
+    public partial class CreateRoom : ContentPage
     {
-        public SetUp()
+        public CreateRoom()
         {
             InitializeComponent();
         }
-
-
-        void OnbtnCreateRoomClicked(object sender, EventArgs args)
-        {
-           
-        }
-
-
-
-
-
-
-
-
     }
 }

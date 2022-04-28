@@ -11,5 +11,14 @@ namespace BattleShipXamarin.Model
         public Room Room {get; set;}
 
 
+
+        public User(string name, string ConnectionID)
+        {
+            this.Name = name;   
+            this.ConnectionId = ConnectionID;
+
+        }
+
+
     }
 }

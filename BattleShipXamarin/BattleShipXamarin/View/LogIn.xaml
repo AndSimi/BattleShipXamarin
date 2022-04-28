@@ -56,16 +56,19 @@
                 <Entry  x:Name="entryExistingPassword" IsPassword="True"/>
 
                 <StackLayout  Orientation="Horizontal" Spacing="3" HorizontalOptions="Center">
+
                     <Button x:Name="btnLogin"  
                       Text="Let me in!"  
                       HorizontalOptions="Center"  
                       VerticalOptions="CenterAndExpand"
                       Clicked="OnbtnLoginClicked"/>
+
                     <Button x:Name="btnCancelLogin"  
                       Text="Cancel"  
                       HorizontalOptions="Center"  
                       VerticalOptions="CenterAndExpand"
                       Clicked="OnbtnCancelLoginClicked"/>
+
                 </StackLayout>
             </StackLayout>
         </StackLayout>
